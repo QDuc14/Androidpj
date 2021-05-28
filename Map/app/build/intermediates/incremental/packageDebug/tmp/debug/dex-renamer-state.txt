@@ -1,0 +1,4 @@
+#Tue May 25 12:09:33 ICT 2021
+base.0=/Users/Rhylaw/Documents/Android/Map/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

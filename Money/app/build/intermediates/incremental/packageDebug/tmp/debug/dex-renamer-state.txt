@@ -1,0 +1,4 @@
+#Fri May 28 11:16:46 ICT 2021
+base.0=/Users/Rhylaw/Documents/Android/Money/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

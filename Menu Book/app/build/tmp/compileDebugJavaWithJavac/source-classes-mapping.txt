@@ -1,0 +1,5 @@
+com/example/bai2/BuildConfig.java
+ com.example.bai2.BuildConfig
+com/example/bai2/MainActivity.java
+ com.example.bai2.MainActivity
+ com.example.bai2.MainActivity$1

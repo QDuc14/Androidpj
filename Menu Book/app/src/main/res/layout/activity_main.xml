@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/main_layout"
+    >
+
+    <WebView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_view"
+        >
+        <TableLayout
+            android:id="@+id/dishes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_margin="2dp"
+                >
+
+                <TextView
+                    android:layout_width="383dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:text="Chi tiết món ăn"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Hình Ảnh"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp">
+
+                <ImageView
+                    android:id="@+id/image_1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/cell_shape"
+                    android:src="@drawable/slowcookershreddedpork"
+                    />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/tv_1"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Slow Cooker Shredded Pork"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/slowcookershreddedpork" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/balsamic_barbecue_chicken" />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/tv_2"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Balsamic Barbecue Chicken"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/balsamic_barbecue_chicken" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_3"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/berry_trifle"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:text="Berry Trifle"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/berry_trifle" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_4"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/chocolate_diablo_cookies"
+
+                    />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/tv_4"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Chocolate Diablo Cookies"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/chocolate_diablo_cookies" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_5"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/miyoko_mcpherson_salt_grilled_mackerel"
+
+                    />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/tv_5"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Salt Grilled Mackerel"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/miyoko_mcpherson_salt_grilled_mackerel" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/picnic_perfect_fried_chicken"
+
+                    />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/tv_6"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Picnic Fried Chicken"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/picnic_perfect_fried_chicken" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_7"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/pistachio_dusted_rose_glazed_yeast_doughnuts"
+
+                    />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/tv_7"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Dusted Rose Glazed Yeast Doughnuts"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/pistachio_dusted_rose_glazed_yeast_doughnuts" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_8"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/smoke_rib_eye_roast"
+
+                    />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/tv_8"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Smoke Rib Eye Roast"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_8"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/smoke_rib_eye_roast" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_9"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/berry_trifle"
+
+                    />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/tv_9"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Spicy Hoisin Glazed Eggplant"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_9"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/spicy_hoisin_glazed_eggplant" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_10"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/warm_chocolate_cakes_with_berries"
+                    />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/tv_10"
+                    android:layout_width="155dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Warm Chocolate Cakes With Berries"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/sub_image_10"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/warm_chocolate_cakes_with_berries" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
+
+
